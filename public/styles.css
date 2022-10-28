@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+
+/* HINDSIGHT - I'm not going to fix this. I want to, but CSS was not the focus here. I might come back later. */
+
+body, html { 
+	margin: 0; 
+	padding: 0; 
+	background-color: black; 
+	overflow: hidden;
+	font-family: 'Teko', sans-serif;
+}
+
+.label {
+	margin-top: -.75em;
+	margin-left: 2.5em;
+
+	color: #FFF;
+	padding: 1px;
+	background: rgba( 0, 0, 0, 0 );
+	font-size: .55em;
+	text-decoration: underline;
+	pointer-events: none;
+}
+
+.selectionArea {
+	cursor: crosshair;
+	pointer-events: auto;
+	z-index: 2;
+}
+
+.targetSelection {
+	padding: 0;
+	margin: 0;
+	pointer-events: none;
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+hr {
+	border: none;
+	border-top: 2px dashed rgb(255, 255, 255);
+	border-bottom: 2px dashed rgb(255, 255, 255);
+	color:rgba( 0, 0, 0, 0 );
+	background-color:rgba( 0, 0, 0, 0 );
+	height: 0;
+	width: 100%;
+	margin-left: -1px;
+}
+
+#side{
+	transform: rotate(100);
+	border-left: 2px dashed rgb(255, 255, 255);
+	border-right: 2px dashed rgb(255, 255, 255);
+	color:rgba( 0, 0, 0, 0 );
+	background-color:rgba( 0, 0, 0, 0 );
+	height: 90vh;
+	width: 0;
+	margin-left: 50px;
+	margin-top: -2px;
+}
+
+.accents {
+	user-select: none;
+	padding-top: 10px;
+	position: absolute;
+}
+
+.header, .btns{
+	user-select: none;
+	width: 100vw;
+	display: flex;
+	padding: 0 25px;
+	flex-direction: row;
+	align-items: center;
+	color: #FFF;
+	background-color: rgba( 0, 0, 0, 0 );
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+.logo img {
+	display: block;
+}
+
+.btns {
+	width: auto;
+	margin-top: 15px;
+	position: absolute;
+	pointer-events: all;
+	z-index: 25;
+	right: 0;
+	padding-left: 0;
+	color: black;
+	background-color: #FFF;
+}
+
+.btns h2 {
+	margin: 0;
+	padding: 0 5px;
+	display: flex;
+	cursor: pointer;
+}
+
+h2:hover {
+	text-decoration: underline;
+}
+
+.card-container {
+	z-index: 50;
+	position: absolute;
+	height: 100%;
+	width: 25vw;
+	right: 0;
+	margin-top: 75px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+
+.planet-container {
+	z-index: 50;
+	position: absolute;
+	height: 100%;
+	width: 25vw;
+	left: 75px;
+	margin-top: 75px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+
+.content {
+	background-color: rgba( 0, 0, 0, .75);
+	border: 4px dashed white;
+	border-right: none;
+	height: 100%;
+}
+
+.planet-container .content {
+	border: 4px dashed white;
+}
+
+.btn {
+	cursor: pointer;
+	user-select: none;
+}
+
+.close-btn {
+	z-index: 50;
+	position: absolute;
+	bottom: 50px;
+	color: black;
+	background-color: white;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 25px;
+}
+
+.hidden {
+	display: none;
+	pointer-events: none;
+}
+
+.close-btn span {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 2px 15px;
+}
+
+.close-btn span * {
+	height: 1.7em;
+	fill: white;
+	display: block;
+}

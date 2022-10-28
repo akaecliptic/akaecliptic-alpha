@@ -1,0 +1,20 @@
+{
+  "name": "learning",
+  "version": "1.0.0",
+  "description": "First attempt at learning ThreeJS and building akaecliptic.dev",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "akaecliptic",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/three": "^0.130.0",
+    "nodemon": "^2.0.20"
+  }
+}
